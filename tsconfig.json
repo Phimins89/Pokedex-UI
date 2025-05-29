@@ -3,7 +3,7 @@
     "module": "esnext",
     "target": "es6",
     "sourceMap": true,
-    "jsx": "preserve",
+    "jsx": "react",
     "noEmit": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -18,5 +18,21 @@
     "types": ["react", "jest", "@testing-library/jest-dom"],
     "baseUrl": "./"
   },
-  "include": ["src"]
+  "include": [
+    "src",
+    "scripts",
+    "jest.config.cjs",
+    "jest.setup.js",
+    "vite.config.ts",
+    "vite-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build",
+    "coverage",
+    "scripts/coverage",
+    "scripts/dist",
+    "scripts/build"
+  ]
 }

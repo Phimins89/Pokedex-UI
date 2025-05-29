@@ -20,6 +20,8 @@ function App() {
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/pokemon" element={<ListPage />} />
+                  <Route path="/pokemon/:id" element={<ListPage />} />
+                  <Route path="*" element={<div>404 Not Found</div>} />
                 </Routes>
               </div>
             </div>
